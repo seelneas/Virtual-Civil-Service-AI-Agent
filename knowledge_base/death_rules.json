@@ -1,0 +1,87 @@
+{
+  "death_registration": {
+    "required_documents": {
+      "1": "ID of the deceased (National ID, Passport, Resident ID, or Work permit)",
+      "2": "Valid ID of the registrar",
+      "3": "Valid ID of the informant (police or reporting person)",
+      "4": "Court decision (if death registered due to disappearance ruling)",
+      "5": "Written proof (if registration delayed beyond legal timeframe)",
+      "6": "Medical death certificate (if death occurred abroad, issued by health institution)"
+    },
+    "registration_numbers": {
+      "form_number": "Unique number assigned at issuance (Art. 85)",
+      "office_code": "Registration office code (Art. 86)",
+      "unique_id": "Combination of office code + year (YYYY) + serial number (0000) (Art. 87)",
+      "previous_civil_id": "If deceased was previously registered (Art. 88)"
+    },
+    "deceased_information": {
+      "full_name": "First, Father’s, Grandfather’s name",
+      "national_id_number": "If available",
+      "marital_status": "Single, Married, Divorced, Widowed, or '-' if none",
+      "gender": "Male / Female",
+      "age": {
+        "standard": "Years",
+        "if_under_1_year": "Months",
+        "if_under_1_month": "Days",
+        "if_under_1_day": "Hours"
+      }
+    },
+    "death_information": {
+      "date_of_death": {
+        "day": "DD",
+        "month": "MMMM",
+        "year": "YYYY"
+      },
+      "place_of_death": {
+        "type": "Hospital, Health Center, Clinic, Home, Street, Other",
+        "ownership": "Government / Private",
+        "location": {
+          "country": "Ethiopia or foreign country name",
+          "region_zone_city": "Region, Zone, City/Woreda, Sub-city"
+        }
+      },
+      "cause_of_death": {
+        "primary": "Cause of death (from medical certificate No.1)",
+        "secondary": "Cause of death (certificate No.2)",
+        "tertiary": "Cause of death (certificate No.3)",
+        "evidence_type": "Verbal autopsy / Medical examination",
+        "evidence_number": "Medical proof reference number"
+      },
+      "maternal_related": {
+        "during_pregnancy": "Yes/No",
+        "during_delivery": "Yes/No",
+        "within_42_days_postpartum": "Yes/No"
+      },
+      "burial_place": "Location of burial"
+    },
+    "informant_information": {
+      "full_name": "First, Father’s, Grandfather’s name",
+      "id_number": "National ID / Passport / Resident ID",
+      "relation_to_deceased": "Spouse, Parent, Sibling, Child, Other"
+    },
+    "workflow": {
+      "status": "pending | approved | rejected",
+      "reviewed_by": "Registrar Name or ID",
+      "date_registered": "YYYY-MM-DD",
+      "last_updated": "YYYY-MM-DD HH:mm:ss"
+    },
+    "fraud_checks": {
+      "duplicate_id_check": "pass | fail",
+      "late_registration_check": "pass | fail",
+      "informant_id_verification": "pass | fail",
+      "cross_registry_match": "pass | fail"
+    },
+    "translations": {
+      "amharic": {
+        "death_certificate": "የሞት የምስክር ወረቀት",
+        "required_documents": "የሚያስፈልጉ ሰነዶች",
+        "informant": "የመዘገበ ሰው",
+        "status": {
+          "pending": "በመጠባበቅ ላይ",
+          "approved": "ተቀባ",
+          "rejected": "ተቀምጧል"
+        }
+      }
+    }
+  }
+}

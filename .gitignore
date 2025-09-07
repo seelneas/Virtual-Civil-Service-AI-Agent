@@ -1,0 +1,10 @@
+pycache/
+*.pyc
+*.pyo
+.env
+.venv/
+.DS_Store
+certificates/
+*.db
+uploads/
+.vscode/
